@@ -9,7 +9,10 @@ class Book:
         self.author = author
         self.year = year
     def get_age(self):
-        print(self.author, self.title, 2023 - self.year)
-title = ('abanaa')
+        print(f"author:{self.author} , Titulo:{self.title}, Ano:{ 2023 - self.year}")
 
-book  = Book()
+author = input("Qual eo nome do livro: ")
+title = input("Qual eo nome do author: ")
+year = int(input("Data do livro: "))
+book  = Book(title,author,year)
+book.get_age()
